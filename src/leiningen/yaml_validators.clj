@@ -1,7 +1,7 @@
 (ns leiningen.yaml-validators
-  (:require [clj-yaml.core :as yaml]
+  (:require [leiningen.utils :as utils]
+            [clj-yaml.core :as yaml]
             [clojure.java.io :as io]
-            [audyx-toolbet.collections :refer [filter-branches]]
             [me.raynes.fs :as fs]
             [leiningen.cljsbuild]
             [io.aviso.ansi :refer [bold-red bold-green]]
@@ -10,7 +10,7 @@
 (defn check-unicity [yml k]
   (println "Checking unicty of" k)
   (as->
-    (filter-branches yml k) $
+    (utils/filter-branches yml k) $
     (map k $)
     (frequencies $)
     (filter #(> (val %) 1) $)))

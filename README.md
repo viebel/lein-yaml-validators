@@ -1,26 +1,15 @@
-# yaml-tools
+# lein-yaml-validators
 
 A Leiningen plugin to do many wonderful things.
 
 ## Usage
 
-FIXME: Use this for user-level plugins:
+Put `[lein-yaml-validators "0.0.1"]` into the `:plugins` vector of your project.clj.
 
-Put `[yaml-tools "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your
-`:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-yaml-tools 0.1.0-SNAPSHOT`.
-
-FIXME: Use this for project-level plugins:
-
-Put `[yaml-tools "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
-
-FIXME: and add an example usage that actually makes sense:
-
-    $ lein yaml-tools
 
 ## License
 
-Copyright © 2015 AUDYX SYSTEMS Ltd.
+Copyright © 2015 Asher Coren
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
