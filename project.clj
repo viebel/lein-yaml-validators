@@ -1,4 +1,4 @@
-(defproject lein-yaml-validators "0.0.1"
+(defproject lein-yaml-validators "0.0.2"
   :description "YAML validaton functions for clojure projects"
   :url "https://github.com/ashercoren/lein-yaml-validators"
   :license {:name "Eclipse Public License"
